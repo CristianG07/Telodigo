@@ -15,18 +15,18 @@ export const Header = () => {
   return (
     <header
       className={`${
-        isActiveScroll ? 'bg-primary shadow-xl' : 'bg-transparent'
-      } z-50 fixed left-0 top-0 w-full duration-700`}
+        isActiveScroll ? 'bg-primary shadow-header' : 'bg-transparent'
+      } z-50 fixed left-0 top-0 w-full duration-500`}
     >
-      <div className='container_header h-20 flex items-center justify-between'>
-        <div className='w-48'>
+      <div className='container_header h-[4.5rem] flex items-center justify-between'>
+        <Link to='/' className='w-48'>
           <img src={logo} alt='telodigo_logo' />
-        </div>
-        <div className=''>
+        </Link>
+        <div>
           <div className='md:hidden'>
             <Bars />
           </div>
-            <Link className='btn_primary py-1.5 hidden md:block mr-14'>Pre-Registro</Link>
+            <Link to='/' className='btn_primary py-1.5 hidden md:block mr-14'>Pre-Registro</Link>
         </div>
       </div>
     </header>

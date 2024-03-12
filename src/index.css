@@ -21,6 +21,10 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
 @layer utilities {
   .container_header {
     @apply w-[93%] max-w-7xl mx-auto
@@ -32,6 +36,9 @@ h3 {
 
 @layer components {
   .btn_primary {
-    @apply bg-secondary px-6 text-white font-medium text-sm w-fit py-2 rounded-full
+    @apply bg-secondary px-6 text-white font-medium text-sm w-fit py-2 rounded-full shadow-btn hover:bg-white hover:text-primary transition-colors duration-200 ease-linear
+  }
+  .card {
+    @apply bg-primary max-w-[22rem] px-5 pt-5 pb-7 rounded-xl shadow-card 
   }
 }
