@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { ImageSlide } from '../components/download/ImageSlide'
 import { app_store, google_play } from '../utils/images'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md'
+import { motion } from 'framer-motion'
 
 export const Download = () => {
   const navigate = useNavigate()
@@ -15,10 +16,16 @@ export const Download = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    navigate('/error404');
-  };
+    navigate('/error404')
+  }
   return (
-    <section className='bg-primary text-white pt-36 pb-16'>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.6 }}
+      exit={{ opacity: 0 }}
+      className='text-white pt-32 lg:pt-20 pb-16'
+    >
       <div className='container_setions flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-20 h-full'>
         <div className='md:w-[70%] lg:w-[40%] space-y-5'>
           <h2 className='text-4xl text-center lg:text-start lg:text-5xl leading-tight'>
@@ -28,7 +35,10 @@ export const Download = () => {
             Selecciona el nombre de la ciudad donde te encuentras viviendo
             actualmente para comenzar a usar la aplicación.
           </p>
-          <form onSubmit={handleSubmit} className='flex flex-col items-center md:flex-row md:items-end gap-10'>
+          <form
+            onSubmit={handleSubmit}
+            className='flex flex-col items-center md:flex-row md:items-end gap-10'
+          >
             <div className='w-full'>
               <label htmlFor='ciudad'>Ciudad *</label>
               <div className='relative text-primary'>
@@ -57,11 +67,13 @@ export const Download = () => {
                 </div>
               </div>
             </div>
-            <button className='btn_primary px-10 py-3 lg:px-5 lg:py-2'>Download</button>
+            <button className='btn_primary px-10 py-3 lg:px-7 lg:py-2'>
+              Download
+            </button>
           </form>
         </div>
         <div className='flex flex-col md:flex-row items-center gap-5'>
-          <div className='w-full max-w-[20rem] lg:max-w-[23rem] mx-auto'>
+          <div className='w-full max-w-[20rem] lg:max-w-[21rem] mx-auto'>
             <ImageSlide />
           </div>
           <div className='w-full flex flex-row-reverse md:flex-col items-center gap-3'>
@@ -74,6 +86,6 @@ export const Download = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

@@ -2,14 +2,14 @@ import { Card } from '../ui/Card'
 
 export const CardsMobile = () => {
   return (
-    <section className='lg:hidden bg-[#222323] grid md:grid-cols-2 justify-items-center mx-auto gap-5 text-white py-10'>
-      <div className=' '>
+    <section className='lg:hidden grid md:grid-cols-2 justify-items-center mx-auto gap-10 text-white'>
+      <div>
         <Card
           title={'Paga con tus apps favoritas'}
           text={'Podrás pagar con Yape, Plin, Tarjetas deb/cred o en Efectivo.'}
         />
       </div>
-      <div className=''>
+      <div>
         <Card
           title={'Encuentra todo tipo de TELOS'}
           text={
@@ -17,7 +17,7 @@ export const CardsMobile = () => {
           }
         />
       </div>
-      <div className=''>
+      <div>
         <Card
           title={'Gana recompensas'}
           text={
@@ -25,7 +25,7 @@ export const CardsMobile = () => {
           }
         />
       </div>
-      <div className=''>
+      <div>
         <Card
           title={'Guarda tus TELOS favoritos'}
           text={

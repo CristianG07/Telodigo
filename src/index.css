@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #222323;
   font-family: "Questrial", sans-serif;
 }
 
@@ -39,6 +40,6 @@ h3 {
     @apply bg-secondary px-6 text-white font-medium text-sm w-fit py-2 rounded-full shadow-btn hover:bg-white hover:text-primary transition-colors duration-200 ease-linear
   }
   .card {
-    @apply bg-primary max-w-[22rem] px-5 pt-5 pb-7 rounded-xl shadow-card 
+    @apply bg-primary max-w-[22rem] lg:max-w-[20rem] px-5 pt-5 pb-7 rounded-xl shadow-card 
   }
 }

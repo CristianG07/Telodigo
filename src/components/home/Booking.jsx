@@ -2,7 +2,7 @@ import { mesage, phone_screen_only4, phone_screen_only4_mobile } from '../../uti
 
 export const Booking = () => {
   return (
-    <section className='relative text-white md:h-[40rem] bg-primary flex flex-col-reverse md:flex-row gap-8'>
+    <section className='relative text-white md:h-[40rem] flex flex-col-reverse md:flex-row gap-8'>
       <div className='md:w-[29%] bg-left_bg bg-no-repeat bg-cover md:bg-contain md:bg-fixed'>
         <div className='md:hidden pb-5'>
           <img src={phone_screen_only4_mobile} alt='phone_screen_only4_mobile' />

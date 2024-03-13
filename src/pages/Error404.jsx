@@ -1,11 +1,18 @@
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { error } from '../utils/images'
 
 export const Error404 = () => {
   return (
-    <section className='bg-primary py-20 flex items-center h-screen text-white'>
-      <div className='container_setions flex flex-col lg:flex-row items-center justify-center gap-10'>
-        <div >
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.6 }}
+      exit={{ opacity: 0 }}
+      className='py-28 flex items-center h-screen text-white'
+    >
+      <div className='container_setions flex flex-col lg:flex-row items-center justify-center '>
+        <div className='min-w-fit'>
           <img src={error} alt='error' />
         </div>
         <div className='md:max-w-xl mx-auto space-y-7'>
@@ -19,10 +26,15 @@ export const Error404 = () => {
             </p>
           </div>
           <div className='text-center'>
-            <Link to='/' className='btn_primary hover:border hover:border-secondary hover:text-secondary hover:bg-primary rounded-lg px-9 shadow-none py-2.5'>Ir al inicio</Link>
+            <Link
+              to='/'
+              className='btn_primary hover:border hover:border-secondary hover:text-secondary hover:bg-primary rounded-lg px-9 shadow-none py-2.5'
+            >
+              Ir al inicio
+            </Link>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
