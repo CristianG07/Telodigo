@@ -16,6 +16,10 @@ html {
   font-family: "Questrial", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3 {

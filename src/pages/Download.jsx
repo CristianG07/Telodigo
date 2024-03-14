@@ -24,7 +24,7 @@ export const Download = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 2.6 }}
       exit={{ opacity: 0 }}
-      className='text-white pt-32 lg:pt-20 pb-16'
+      className='text-white pt-32 lg:pt-20 pb-16 2xl:h-screen'
     >
       <div className='container_setions flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-20 h-full'>
         <div className='md:w-[70%] lg:w-[40%] space-y-5'>

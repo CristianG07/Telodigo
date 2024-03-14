@@ -18,7 +18,7 @@ export default {
         'center_gradian': 'url("/src/assets/img/center_gradian.png")'
       },
       boxShadow: {
-        'btn': '0px 0px 12px 0px rgba(162,56,255,0.75)',
+        'btn': '0px 0px 15px 0px rgba(162,56,255,0.75)',
         'card': '0px 0px 30px 0px rgba(0, 0, 0, 0.45)',
         'header': '0px 2px 25px 0px rgba(0, 0, 0, 0.75)',
       }

@@ -35,7 +35,7 @@ export const Header = () => {
             <button onClick={() => setIsOpenSidebar((prev) => !prev)} className='md:hidden relative z-20'>
               <Bars isOpenSidebar={isOpenSidebar} setIsOpenSidebar={setIsOpenSidebar} />
             </button>
-            <Link to='/' className='btn_primary py-1.5 hidden md:block mr-14'>
+            <Link to='/#subscription' className='btn_primary py-1.5 hidden md:block mr-14'>
               Pre-Registro
             </Link>
           </div>

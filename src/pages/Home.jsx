@@ -6,6 +6,7 @@ import { Subscription } from '../components/home/Subscription'
 import { motion } from 'framer-motion'
 
 export const Home = () => {
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
