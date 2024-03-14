@@ -13,7 +13,7 @@ export const Error404 = () => {
     >
       <div className='container_setions flex flex-col lg:flex-row items-center justify-center '>
         <div className='min-w-fit'>
-          <img src={error} alt='error' />
+          <img className='aspect-[415/286]' src={error} alt='error' />
         </div>
         <div className='md:max-w-xl mx-auto space-y-7'>
           <div className='space-y-5'>

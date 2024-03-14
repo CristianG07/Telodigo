@@ -31,7 +31,7 @@ export const ImageSlide = () => {
             <img
               src={image.img}
               alt=''
-              className='object-cover w-full h-full'
+              className='object-cover w-full h-full aspect-[40/81]'
             />
           </div>
         </SwiperSlide>
