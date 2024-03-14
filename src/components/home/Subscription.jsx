@@ -46,7 +46,7 @@ export const Subscription = () => {
   return (
     <section id='subscription' className='text-white'>
       <div className='max-w-3xl lg:max-w-4xl px-3 mx-auto py-20 space-y-5'>
-        <h2 className='text-3xl md:text-5xl text-center'>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl text-center'>
           Suscríbete y obtén 15% menos en tu primera reserva
         </h2>
         <div>

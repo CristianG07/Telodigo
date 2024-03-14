@@ -19,7 +19,7 @@ export const Booking = () => {
                 <p>RESERVA EN TIEMPO REAL</p>
               </div>
             </div>
-            <h3 className='text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl text-center max-w-[50%] mx-auto'>
+            <h3 className='text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl text-center max-w-[95%] md:max-w-[50%] mx-auto'>
               " PARA QUE NO PASES ROCHE DE TELO EN TELO "
             </h3>
           </div>

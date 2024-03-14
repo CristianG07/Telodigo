@@ -30,7 +30,7 @@ export const Sidebar = ({ isOpenSidebar, setIsOpenSidebar }) => {
         </div>
         <div>
           <Link
-            to='/'
+            to='/#subscription'
             onClick={() => setIsOpenSidebar(false)}
             className='btn_primary text-xl px-10 py-4 mx-auto'
           >
